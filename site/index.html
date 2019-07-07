@@ -8,8 +8,8 @@
 		text-align: center;
 	}
 	#b1{
-			height: 100px;
-		width: 300px;
+		height: 200px;
+		width: 400px;
 		padding: 0px;
 		border: 1px solid black;
 		background-color: blue;
@@ -19,45 +19,43 @@
 	}
 	#s1
 	{
-		position: relative;
-		left: 198px;
-        bottom: 16px;
+		float:right;
 		box-sizing: border-box;
 		border: 1px solid black;
-      background-color: yellow;
-      color: black;
-      font: bold;
-            width: 100px;
-          	}
-      	#s2
+        background-color: yellow;
+        color: black;
+        font: bold;
+        margin:auto;
+    }
+    #s2
       	{
-      		position: relative;
-		left: 198px;
-        bottom: 16px;
+      	float: right;
         box-sizing: border-box;
       		background-color: pink;
       		color: black;
       		font:bold;
       		border: 1px solid black;
-      		 width: 100px;
+      		 margin: auto;
       	}
       	#s3{
-      		position: relative;
-		left: 198px;
-        bottom: 16px;
+      		float: right;
         box-sizing: border-box;
       		background-color: grey;
       		font: bold;
       		color: black;
       		border: 1px solid black;
-      		 width: 100px;
+      		 margin: auto;
       	}
       	#content{
-      		position: relative;
-      		bottom: 15px;
-      		width: 300px;
+      		position:relative;
+      		top:50px;
+      		width: 400px;
       		padding: 0px;
       	}
+      	.row{
+         width:100%; 
+      	}
+      	
 	@media(min-width: 992px)
 	{
       .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12;{
@@ -140,31 +138,32 @@
 	.col-md-12{
 		width: 100%;
 	}
+}
 	@media(max-width: 767px){
-		.col-mg-12{float: left;}
-		.col-mg-12{
-			width:100%;
+		.col-sm-12{
+			float: left;
+		width:100%;
 		}
 	}
-}
 </style>
 </head>
 
 		<body>
 		<h1> OUR DISHES </h1>
-		<div id= "b1" class="col-lg-4 col-md-6 col-mg-12" >
-			<p id= "s1">Rasam Rice</p>
+		
+		<div id="b1" class="col-lg-4 col-md-6 col-sm-12" >
+			<h2 id= "s1">Rasam Rice</h2>
 			<p id="content"> This is an authentic South Indian dish. Rice and spices are the main ingredients.South Indians love this dish.</p>
 		</div>
 	
-		<div id = "b1" class="col-lg-3 col-md-6 col-mg-12">
-		 <p id ="s2">Sambhar Rice</p>
+		<div id = "b1" class="col-lg-3 col-md-6 col-sm-12">
+		 <h2 id ="s2">Sambhar Rice</h2>
 		<p id="content"> This is an authentic South Indian dish. Rice and spices are the main ingredients.South Indians love this dish.</p>
 	</div>
-		<div id="b1" class="col-lg-3 col-md-6 col-mg-12">
-		 <p id="s3">Lemon Rice</p>
+		<div id="b1" class="col-lg-3 col-md-6 col-sm-12">
+		 <h2 id="s3">Lemon Rice</h2>
 		<p id="content"> This is an authentic South Indian dish. Rice and spices are the main ingredients.South Indians love this dish.</p>
 	</div>
-		</body
+		</body>
 
 </html>
